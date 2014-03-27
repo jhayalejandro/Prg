@@ -18,18 +18,21 @@ package convertinchtocm;
      /**
      * @param args the command line arguments
      */
-    //Set the console variable
-    static Scanner Console = new Scanner (System.in);
-    //Set the Conversion amount
-    final static double CONVERSION_RATE = 2.54; 
+        // Set the console variable
+            static Scanner Console = new Scanner (System.in);
+    
+        // Set the Conversion amount
+            final static double CONVERSION_RATE = 2.54; 
     
     public static void main(String[] args) {
-    //Variables for the program
-    double InputInches; 
-    //Display a message asking for inches
-    System.out.println("Please eneter the amount of inches"); 
-    InputInches = Console.nextDouble(); 
-    //display the centimetre amount
-    System.out.print("You entered" + InputInches + "\nWhich converts to" + (InputInches * CONVERSION_RATE) + "cm");
+        // Variables for the program
+            double InputInches; 
+   
+        // Display a message asking for inches
+            System.out.println("Please eneter the amount of inches"); 
+            InputInches = Console.nextDouble(); 
+    
+    // Display the centimetre amount
+         System.out.print("You entered" + InputInches + "\nWhich converts to" + (InputInches * CONVERSION_RATE) + "cm");
     }
 }
